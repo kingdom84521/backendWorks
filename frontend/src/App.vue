@@ -8,16 +8,19 @@
         </v-sheet>
       </v-col>
     </v-row>
+    <User-Menu></User-Menu>
   </v-app>
 </template>
 
 <script>
 import header from '@/components/common/Header.vue'
+import userMenu from '@/components/common/UserMenu.vue'
 
 export default {
   name: 'App',
   components: {
-    Header: header
+    Header: header,
+    UserMenu: userMenu,
   },
 
   data: () => ({
@@ -27,4 +30,13 @@ export default {
 </script>
 
 <style scoped>
+  .user-menu {
+    width: 40px ;
+    height: 75px ;
+    border-radius: 0px 76px 76px 0px ;
+    background-color: crimson;
+    position: fixed;
+    left: 8.4%;
+    bottom: 50%;
+  }
 </style>

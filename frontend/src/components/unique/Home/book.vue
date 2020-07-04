@@ -11,8 +11,10 @@
       <v-col>
         <v-row no-gutters>
           <v-col>
-            <div class="ma-3 round-corner border" style="padding-bottom: 50%" v-slot:name>
+            <div class="ma-3 pa-1 round-corner border">
+              <slot name="image" />
             </div>
+            <v-spacer></v-spacer>
             <div class="text-start ml-3 title text-weight-black">
               {{ this.name }}
             </div>

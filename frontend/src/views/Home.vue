@@ -4,7 +4,7 @@
       <v-col cols="11">
         <v-row no-gutters>
           <Book v-for="index in 12" :key="`book-${index}`" status="newBook">
-            <img src="@/assets/cat.jpg" v-slot:image />
+            <img src="@/assets/picture_missing.png" slot="image" width="100%" height="100%"/>
           </Book>
         </v-row>
       </v-col>
